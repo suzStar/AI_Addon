@@ -1,4 +1,5 @@
 body {
+    margin: 1em 5em;
     background: #FBF2EE;
     font-family: "Urbanist", sans-serif;
     color: #303030;
@@ -6,6 +7,7 @@ body {
 
 .navigation {
     display: flex;
+    flex: 5;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style: none;
@@ -18,12 +20,27 @@ body {
     padding: 1em;
 }
 
-.container {
+.main-content {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 0 0 0 10em;
-    padding: 0 5em;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.heroImage {
+    flex: 1;
+    max-width: 50%;
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    flex: 1;
+    max-width: 45%;
 }
 
 h1 {
@@ -32,14 +49,14 @@ h1 {
 }
 
 h3 {
-    margin-top: -4.5em;
+    margin-top: -3em;
 }
 
-form {
+.form-container {
     border-radius: 15px;
     background: #FFFEFF50;
     padding: 2.5em;
-    margin-top: 5em;
+    margin-top: 2em;
     text-align: center;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
         rgba(17, 17, 26, 0.1) 0px 16px 56px,
@@ -49,8 +66,8 @@ form {
 .formFillin {
     padding: 16px;
     border: 0 solid rgba(39, 33, 66, 0.5);
-    width: 90%;
     height: 50px;
+    width: 90%;
     font-size: 16px;
     border-radius: 10px;
     line-height: 20px;
@@ -59,11 +76,35 @@ form {
 
 .formContainer {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* cleaner spacing */
+    gap: 1rem;
+    margin: 20px 0;
+    align-items: stretch;
+    text-align: left;
 }
 
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+select {
+    width: 100%;
+    /* fill the formGroup */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em;
+    min-height: 3rem;
+    margin: 0.5em 0;
+}
 
 .formButton {
     align-items: center;
@@ -90,7 +131,7 @@ form {
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: baseline;
-    width: 90%;
+    width: 100%;
 }
 
 .formButton:hover,
@@ -107,4 +148,10 @@ form {
     background-color: #c85000;
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
+}
+
+.poem{
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 1.5;
 }
