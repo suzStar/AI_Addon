@@ -5,21 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <title>AI Addon Week 2</title>
 </head>
 
 <body>
-    <h1>AI Addon Week 2</h1>
+    <nav class="navigation">
+        <li><a href="https://github.com/suzStar" target="_blank">Suzanne Sharman</a></li>
+        <li><a href="https://github.com/suzStar/AI_Addon" target="_blank">GitHub</a></li>
+        <li><a href="https://aiaddon.netlify.app/" target="_blank">Netlify</a></li>
+    </nav>
 
-    <footer>
-        This AI project was coded by
-        <a href="https://github.com/suzStar" target="_blank">Suzanne Sharman</a> and
-        is
-        <a href="https://github.com/suzStar/AI_Addon" target="_blank">find source here on GitHub</a>
-        and is
-        <a href="https://aiaddon.netlify.app/" target="_blank">hosted on Netlify</a>.
-        </footer>
+    <main class="container">
+        <h1>AI Poem Generator</h1>
+        <h3>Create unique, poetic pieces with the help of AI. </h3>
+
+
+        <div class="form">
+            <form action="" method="get" class="form-example">
+                <input type="text" class="formFillin" placeholder="Enter the topic for the poem" autofocus required
+                    autocomplete="off" />
+
+                <div class="formContainer">
+                    <li>
+                        <label for="type-select">Type:</label><br>
+                        <select name="type" id="type-select">
+                            <option value="Haiku">Haiku</option>
+                            <option value="Free verse">Free verse</option>
+                            <option value="Sonnet">Sonnet</option>
+                            <option value="Acrostic">Acrostic</option>
+                            <option value="Villanelle">Villanelle</option>
+                            <option value="Limerick">Limerick</option>
+                            <option value="Ode">Ode</option>
+                            <option value="Elegy">Elegy</option>
+                            <option value="Ballad">Ballad</option>
+                        </select>
+                    <li>
+                        <label for="poetic-devices-select">Poetic Devices:</label><br>
+                        <select name="poetic-devices" id="poetic-devices-select">
+                            <option value="Metaphor">Metaphor</option>
+                            <option value="Simile">Simile</option>
+                            <option value="Alliteration">Alliteration</option>
+                            <option value="Assonance">Assonance</option>
+                            <option value="Imagery">Imagery</option>
+                            <option value="Hyerbole">Hyerbole</option>
+                            <option value="Symbolism">Symbolism</option>
+                            <option value="Onomatopoeia">Onomatopoeia</option>
+                            <option value="Enjambment">Enjambment</option>
+                        </select>
+                    </li>
+                    </li>
+                </div>
+                <br>
+                <div class="form-button">
+                    <input class="formButton" type="submit" value="Genereate Poem" />
+                </div>
+                <div>
+                    <p>lipsum
+                    </p>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
     <script src="src/index.js"></script>
 </body>
 
