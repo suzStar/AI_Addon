@@ -150,8 +150,22 @@ select {
     transform: translateY(0);
 }
 
-.poem {
+.poem.contentAdded {
     margin-top: 2em;
     font-size: 20px;
     line-height: 1.5;
 }
+
+.blinkingAnimation {
+    animation: blink-animation 1s steps(5, start) infinite; }
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    } }
