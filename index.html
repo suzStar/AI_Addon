@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,7 @@
 
             <div class="form-container">
 
-                <form action="" method="get" class="form">
+                <form action="" method="get" class="form" id="poem-input">
                     <input type="text" class="formFillin" placeholder="Enter the topic for the poem" autofocus required
                         autocomplete="off" />
 
@@ -71,10 +72,7 @@
                         <input class="formButton" type="submit" value="Generate Poem" />
                     </div>
 
-                    <div class="poem">
-                        Purple petals sway<br>
-                        Soft wind whispers through the leaves<br>
-                        Summer's gentle kiss
+                    <div class="poem" id="poem-output">
                     </div>
                 </form>
             </div>
